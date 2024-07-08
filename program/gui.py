@@ -36,10 +36,10 @@ def save_tasks():
 # main program window
 root =tkinter.Tk()
 root.title("Todo list")
-root.geometry("640x480")
+root.geometry("450x350")
 
 # create gui
-quote_label=tkinter.Label(root,text=random_quote)
+quote_label=tkinter.Message(root,text=random_quote,font=("Arial", 16), width=300, anchor=tkinter.CENTER, justify=tkinter.CENTER)
 quote_label.pack()
 
 frame_tasks=tkinter.Frame(root)
