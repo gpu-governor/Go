@@ -2,6 +2,7 @@
 import tkinter
 import tkinter.messagebox
 import pickle
+from quotes import random_quote 
 
 def add_tasks():
     task= entry_task.get()
@@ -38,6 +39,8 @@ root.title("Todo list")
 root.geometry("640x480")
 
 # create gui
+quote_label=tkinter.Label(root,text=random_quote)
+quote_label.pack()
 
 frame_tasks=tkinter.Frame(root)
 frame_tasks.pack()
